@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LinkCollectionViewCell" customModule="FeedSX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="296" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jT4-ZO-ARP">
+                        <rect key="frame" x="16" y="5" width="264" height="78"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="GQe-iv-XzF">
+                                <rect key="frame" x="0.0" y="0.0" width="264" height="78"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link.icloud" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b9i-3p-9jq">
+                                        <rect key="frame" x="0.0" y="3.6666666666666643" width="78" height="70.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="78" id="JUh-av-rRU"/>
+                                            <constraint firstAttribute="width" secondItem="b9i-3p-9jq" secondAttribute="height" multiplier="1:1" id="wen-sz-LOM"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="thin"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J6i-Bq-e6g">
+                                        <rect key="frame" x="93" y="10.000000000000004" width="116" height="58.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCD-Ry-WeS" customClass="LMLabel" customModule="FeedSX" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="29.333333333333332" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzp-iZ-pdV" customClass="LMLabel" customModule="FeedSX" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="22" width="74" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="link" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-IC-C67" customClass="LMLabel" customModule="FeedSX" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44" width="19.666666666666668" height="14.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4K-21-AdD" customClass="LMButton" customModule="FeedSX" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="19" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="0.32746735629656459" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FQ3-AK-rn7"/>
+                                            <constraint firstAttribute="width" constant="40" id="vjl-fN-N5v"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="trash.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="light"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GQe-iv-XzF" firstAttribute="leading" secondItem="jT4-ZO-ARP" secondAttribute="leading" id="3oi-v1-WFL"/>
+                            <constraint firstAttribute="bottom" secondItem="GQe-iv-XzF" secondAttribute="bottom" id="8yn-JG-AA6"/>
+                            <constraint firstItem="GQe-iv-XzF" firstAttribute="top" secondItem="jT4-ZO-ARP" secondAttribute="top" id="gb1-4I-OdP"/>
+                            <constraint firstAttribute="trailing" secondItem="GQe-iv-XzF" secondAttribute="trailing" id="uyh-9S-Bpp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jT4-ZO-ARP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Kas-Uz-J6W"/>
+                <constraint firstItem="jT4-ZO-ARP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="v9H-cl-qSq"/>
+                <constraint firstAttribute="trailing" secondItem="jT4-ZO-ARP" secondAttribute="trailing" constant="16" id="xhY-BC-dZB"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jT4-ZO-ARP" secondAttribute="bottom" constant="5" id="xwD-ur-OgF"/>
+            </constraints>
+            <size key="customSize" width="296" height="257"/>
+            <connections>
+                <outlet property="linkDescriptionLabel" destination="lzp-iZ-pdV" id="arZ-ci-ZU2"/>
+                <outlet property="linkDetailContainerView" destination="jT4-ZO-ARP" id="L09-zc-y1h"/>
+                <outlet property="linkLabel" destination="mZd-IC-C67" id="4RP-pq-cUi"/>
+                <outlet property="linkThumbnailImageView" destination="b9i-3p-9jq" id="jwJ-9b-Fk1"/>
+                <outlet property="linkTitleLabel" destination="HCD-Ry-WeS" id="TLA-S5-6uQ"/>
+                <outlet property="removeButton" destination="m4K-21-AdD" id="x68-MU-tkz"/>
+            </connections>
+            <point key="canvasLocation" x="192.36641221374046" y="-8.8028169014084519"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="m4K-21-AdD">
+            <size key="intrinsicContentSize" width="18.666666666666668" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="link.icloud" catalog="system" width="128" height="90"/>
+        <image name="trash.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

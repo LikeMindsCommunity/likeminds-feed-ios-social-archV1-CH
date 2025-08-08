@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "broken_link.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
